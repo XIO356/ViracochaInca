@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viracocha Inca</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background-color: #f6d6ad;
+      color: #000;
+    }
+
+    header {
+      background-color: #e29578;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 25px;
+      height: 120px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.6em;
+      text-align: center;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+
+    .volver {
+      position: absolute;
+      left: 20px;
+      background-color: #fff5e1;
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9em;
+      text-decoration: none;
+      color: black;
+      border: 2px solid #000;
+      transition: transform 0.2s;
+    }
+
+    .volver:hover {
+      transform: scale(1.1);
+    }
+
+    main {
+      display: flex;
+      background-color: #f6d6ad;
+      height: calc(100vh - 120px);
+    }
+
+    .izquierda {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .izquierda img {
+      width: 60%;
+      max-width: 320px;
+      border: 10px solid white;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .derecha {
+      flex: 1;
+      background-color: #b5651d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px;
+    }
+
+    .dato {
+      background-color: #fff0d9;
+      width: 80%;
+      padding: 22px;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 1.4em;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .dato:nth-child(even) {
+      background-color: #f9c89b;
+    }
+
+    @media (max-width: 800px) {
+      main {
+        flex-direction: column;
+        height: auto;
+      }
+      .izquierda img {
+        width: 70%;
+        margin: 20px 0;
+      }
+      .dato {
+        width: 90%;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://xio356.github.io/pageinca0/" class="volver">←</a>
+    <h1>Viracocha Inca</h1>
+  </header>
+
+  <main>
+    <div class="izquierda">
+      <img src="viracocha-inca.png" alt="Imagen de Viracocha Inca">
+    </div>
+    <div class="derecha">
+      <div class="dato">Fue el octavo gobernante del Imperio Inca y padre de Pachacútec.</div>
+      <div class="dato">Su nombre hace referencia al dios creador Viracocha, a quien rindió especial culto.</div>
+      <div class="dato">Durante su gobierno se produjeron invasiones chancas, que lo obligaron a huir del Cuzco.</div>
+      <div class="dato">Aunque su reinado fue inestable, su hijo Pachacútec logró recuperar el poder y expandir el imperio.</div>
+    </div>
+  </main>
+</body>
+</html>
